@@ -1,0 +1,69 @@
+// Positions
+$position-fixed: fixed;
+$position-abs: absolute;
+$position-rel: relative;
+$auto-margin: 0 auto;
+
+
+$top-zero: 0;
+
+// Flexbox
+$disp-flex: flex;
+$column: column;
+
+// Display
+$disp-none: none;
+$disp-grid: grid;
+$disp-in-bl: inline-block;
+
+// Items
+$align-center: center;
+$space-evenly: space-evenly;
+
+// Colors
+$white: white;
+$gray: gray;
+$black: black;
+
+$navbar-bg: rgba(0, 0, 0, 0.522);
+$nav-text-color: rgba(255, 255, 255, 0.645);
+$nav-text-color-hover: rgba(255, 255, 255, 0.808);
+
+$small-title: rgb(26 26 26 / 68%);
+
+// Fonts
+$verdana: Verdana, Geneva, Tahoma, sans-serif;
+$gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+sans-serif;
+
+// Font sizes
+$icon-size: 30px;
+
+// Text style
+$deco-none: none;
+$uppercase: uppercase;
+$weight-bold: bold;
+
+$pointer: pointer;
+$small-let-sp: 1px;
+
+// transitions
+$button-trans: 0.5s;
+
+// Widths
+$width-100: 100%;
+$width-60: 60%;
+$width-40: 40%;
+
+// Heights
+$height-100: 100%;
+
+// BGs
+$bg-cover: cover;
+
+// Animation properties
+$linear: linear;
+
+// Layers
+$z-index-up: 999;
+
