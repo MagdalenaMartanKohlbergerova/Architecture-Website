@@ -121,10 +121,7 @@ header {
       position: $position-rel;
 
       .showroom {
-        font-size: 1.5em;
-        font-weight: $weight-bold;
-        text-transform: $uppercase;
-        color: $small-title;
+        @include small-title;
       }
 
       .showroom-info {
@@ -141,6 +138,139 @@ header {
   }
 }
 /* /HEADER******* */
+
+/* MAIN******* */
+main {
+  background-color: white;
+}
+
+.grid-container {
+  display: $disp-grid;
+  grid-template-columns: $two-layout;
+  grid-template-rows: $two-layout;
+  background-color: $white;
+  padding-block-end: 5rem;
+
+  .grid-box {
+    overflow: hidden;
+    height: 550px;
+
+    .grid-content {
+      height: 350px;
+
+      img {
+        height: $height-100;
+        width: $width-100;
+        transition: 3s;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 3s;
+        }
+      }
+    }
+  }
+
+  article {
+    background: $white;
+    position: $position-rel;
+    text-align: left;
+    padding-inline: 2rem;
+    padding-block-start: 2rem;
+    font-family: $gill;
+
+    p {
+      @include small-title;
+    }
+
+    button {
+      margin-block-start: 1rem;
+      @include button;
+      -webkit-animation: heartbeat 3s linear infinite both;
+      animation: heartbeat 3s linear infinite both;
+    }
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* /MAIN******* */
 
 @media (max-width: 1000px) {
   header {
@@ -194,7 +324,52 @@ header {
 
   .layout {
     .sidebar {
-        @include box-width(150px);
+      @include box-width(150px);
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    overflow: hidden;
+
+    .grid-content {
+      height: 380px;
+    }
+  }
+}
+
+@media (max-width: 529px) {
+  .grid-container {
+    .grid-box {
+      overflow: hidden;
+      height: 500px;
+
+      .grid-content {
+        height: 300px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .info-blocks{
+    .box3{
+      article{
+        width: 280px;
+      }
+    }
+  }
+
+  .grid-container{
+    .grid-box{
+      overflow: hidden;
+      height: 450px;
+
+      .grid-content{
+        height: 250px;
+      }
     }
   }
 }

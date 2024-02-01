@@ -11,6 +11,9 @@ $top-zero: 0;
 $disp-flex: flex;
 $column: column;
 
+// Grid
+$two-layout: repeat(2, minmax(0, 1fr));
+
 // Display
 $disp-none: none;
 $disp-grid: grid;

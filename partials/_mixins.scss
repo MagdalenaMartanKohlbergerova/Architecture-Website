@@ -12,9 +12,11 @@
   height: $height;
 }
 
-@mixin box-width ($width: 100%){
-    width: $width;
+@mixin box-width($width: 100%) {
+  width: $width;
 }
+
+// /mixins with argument
 
 @mixin layout {
   @include box-width;
@@ -25,24 +27,30 @@
   background-color: $nav-text-color;
 }
 
-@mixin button-border{
-    border: 1px solid $black;
+@mixin button-border {
+  border: 1px solid $black;
 }
 
 @mixin button {
-    @include button-border;
-    background: $black;
-    color: $white;
-    padding-inline: 1.5rem;
-    padding-block: 0.5rem;
-    cursor: $pointer;
+  @include button-border;
+  background: $black;
+  color: $white;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  cursor: $pointer;
+  transition: $button-trans;
+
+  &:hover {
     transition: $button-trans;
+    letter-spacing: $small-let-sp;
+    color: $black;
+    background-color: $white;
+  }
+}
 
-    &:hover {
-        transition: $button-trans;
-        letter-spacing: $small-let-sp;
-        color: $black;
-        background-color: $white;
-      }
-
+@mixin small-title {
+  font-size: 1.5em;
+  font-weight: $weight-bold;
+  text-transform: $uppercase;
+  color: $small-title;
 }
