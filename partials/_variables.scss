@@ -4,7 +4,6 @@ $position-abs: absolute;
 $position-rel: relative;
 $auto-margin: 0 auto;
 
-
 $top-zero: 0;
 
 // Flexbox
@@ -32,15 +31,17 @@ $navbar-bg: rgba(0, 0, 0, 0.522);
 $nav-text-color: rgba(255, 255, 255, 0.645);
 $nav-text-color-hover: rgba(255, 255, 255, 0.808);
 
-$small-title: rgb(26 26 26 / 68%);
+$small-title-clr: rgb(26 26 26 / 68%);
+$big-title-clr: rgb(43, 43, 43);
+$paragraph-txt-clr: rgb(35, 35, 35);
 
 // Fonts
 $verdana: Verdana, Geneva, Tahoma, sans-serif;
-$gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-sans-serif;
+$gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
 // Font sizes
 $icon-size: 30px;
+$big-title: 40px;
 
 // Text style
 $deco-none: none;
@@ -50,6 +51,9 @@ $weight-bold: bold;
 $pointer: pointer;
 $small-let-sp: 1px;
 
+// Images
+$grayscale: grayscale(1);
+
 // transitions
 $button-trans: 0.5s;
 
@@ -57,6 +61,7 @@ $button-trans: 0.5s;
 $width-100: 100%;
 $width-60: 60%;
 $width-40: 40%;
+$width-50: 50%;
 
 // Heights
 $height-100: 100%;
@@ -69,4 +74,3 @@ $linear: linear;
 
 // Layers
 $z-index-up: 999;
-
