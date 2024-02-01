@@ -17,6 +17,7 @@ $two-layout: repeat(2, minmax(0, 1fr));
 $disp-none: none;
 $disp-grid: grid;
 $disp-in-bl: inline-block;
+$disp-bl: block;
 
 // Items
 $align-center: center;
@@ -31,15 +32,28 @@ $navbar-bg: rgba(0, 0, 0, 0.522);
 $nav-text-color: rgba(255, 255, 255, 0.645);
 $nav-text-color-hover: rgba(255, 255, 255, 0.808);
 
+$contact-title: rgba(255, 255, 255, 0.833);
+$contact-text-clr: rgba(255, 255, 255, 0.394);
+$contact-text-clr-hover: rgb(158, 158, 158);
+
 $small-title-clr: rgb(26 26 26 / 68%);
 $big-title-clr: rgb(43, 43, 43);
 $paragraph-txt-clr: rgb(35, 35, 35);
+
+$contact-bg: rgba(169, 169, 169, 0.104);
+$contact-input-bg: rgb(128, 128, 128);
+$form-button-clr: rgba(255, 255, 255, 0.931);
+$form-button-hover: rgb(63, 63, 63);
+$form-text-clr:  rgba(255, 255, 255, 0.394);
+$form-icon-clr: rgba(255, 255, 255, 0.931);
+$form-icon-hover: rgb(99, 99, 99);
 
 // Fonts
 $verdana: Verdana, Geneva, Tahoma, sans-serif;
 $gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
 // Font sizes
+$mid-text-size: 20px;
 $icon-size: 30px;
 $big-title: 40px;
 

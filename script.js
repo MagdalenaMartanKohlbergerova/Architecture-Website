@@ -10,7 +10,6 @@ const initSlider = () => {
     const imageList = document.querySelector (".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
     const sliderScrollbar = document.querySelector(".slider-container .slider-scrollbar");
-    const scrollbarThumb = document.querySelector(".scrollbat-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     slideButtons.forEach(button => {

@@ -55,3 +55,10 @@
   color: $small-title-clr;
 }
 
+@mixin contact-title{
+  font-size: $icon-size;
+  color: $contact-title;
+  align-content: first baseline;
+  font-family: $gill;
+  font-weight: 500;
+}
